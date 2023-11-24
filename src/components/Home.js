@@ -3,7 +3,7 @@ import React from 'react';
 export default function Home() {
   return (
     <div className='bg-image flex justify-center items-center'>
-      <div className="bg-[#f5efe3] md:w-1/2 h-auto w-full p-4 md:rounded-lg">
+      <div className="bg-[#f5efe3] md:w-1/2 h-auto w-full p-4 lg:px-4 lg:py-8 md:rounded-lg">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-black lg:text-3xl text-lg fon-semibold">Shop Our Aesthetics</h1>
           <p className="my-4 md:text-sm text-xs text-center text-gray-600 leading-loose tracking-widest">
