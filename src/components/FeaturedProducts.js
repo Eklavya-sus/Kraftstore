@@ -48,12 +48,12 @@ const products = [
 const FeaturedProducts = () => {
     return (
         <div className="bg-[#f5efe3]">
-            <div className="mx-auto max-w-2xl px-4 py-10 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <div className="mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                 <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Featured Collection</h2>
 
-                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
-                        <div key={product.id} className="group relative border border-4px border-[#C2A293] p-2 rounded-sm">
+                        <div key={product.id} className="group relative border md:border-4px border-2px border-[#cccccc] md:p-2 p-1 rounded-sm shawdow-lg">
                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-sm bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                                 <img
                                     src={product.imageSrc}
@@ -71,8 +71,9 @@ const FeaturedProducts = () => {
                                     </h3>
                                     <p className="mt-1 text-sm text-gray-500">{product.description}</p>
                                 </div>
-                                <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                               
                             </div>
+                            <p className="text-sm font-medium text-gray-900">{product.price}</p>
                         </div>
                     ))}
                     <button className='rounded-lg bg-[#956f5a] text-[#f5efe3] md:text-lg text-sm py-2 px-4 font-semibold hover:cursor-pointer hover:bg-[#C2A293]'>View All</button>
