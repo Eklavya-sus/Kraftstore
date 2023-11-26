@@ -116,7 +116,7 @@ const MoreCollectionSection = () => {
                                     className="w-full h-40 lg:h-48 object-cover transition-transform duration-300 transform-gpu group-hover:scale-110"
                                 />
                                 <div className="p-4">
-                                    <h3 className="text-xs md:text-lg font-semibold">{product.name} &rarr;</h3>
+                                    <h3 className="text-xs md:text-lg font-medium">{product.name} &rarr;</h3>
                                 </div>
                             </div>
                         </div>
