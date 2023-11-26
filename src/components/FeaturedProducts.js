@@ -53,7 +53,7 @@ const FeaturedProducts = () => {
 
                 <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
-                        <div key={product.id} className="group relative border md:border-4px border-2px border-[#cccccc] md:p-2 p-1 rounded-sm shawdow-lg">
+                        <div key={product.id} className="group relative border md:border-4px border-2px border-[#cccccc] rounded-sm shawdow-lg">
                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-sm bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                                 <img
                                     src={product.imageSrc}
@@ -61,7 +61,7 @@ const FeaturedProducts = () => {
                                     className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                                 />
                             </div>
-                            <div className="mt-4 flex justify-between">
+                            <div className="mt-4 md:p-2 p-1 flex justify-between">
                                 <div>
                                     <h3 className="text-sm text-gray-700">
                                         <a href={product.href}>
@@ -70,13 +70,13 @@ const FeaturedProducts = () => {
                                         </a>
                                     </h3>
                                     <p className="mt-1 text-sm text-gray-500">{product.description}</p>
+                                    <p className="text-sm font-medium text-gray-900 mt-1">{product.price}</p>
                                 </div>
-                               
                             </div>
-                            <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                            
                         </div>
                     ))}
-                    <button className='rounded-lg bg-[#956f5a] text-[#f5efe3] md:text-lg text-sm py-2 px-4 font-semibold hover:cursor-pointer hover:bg-[#C2A293]'>View All</button>
+                    <button className='rounded-lg bg-[#956f5a] text-[#f5efe3] md:text-lg text-sm py-2 px-4 font-semibold hover:cursor-pointer hover:bg-[#C2A293]'>View All &rarr;</button>
                 </div>
             </div>
         </div>
