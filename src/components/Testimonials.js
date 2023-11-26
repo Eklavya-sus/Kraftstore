@@ -20,7 +20,17 @@ const cards = [
         id: 3,
         name: 'Sakshi',
         description: "I ordered a vintage card for my boyfriend and a photo frame and both of them were really good. it's a great gift for your loved ones. I would definitely recommend this to everyone."
-    }
+    },
+    {
+        id: 4,
+        name: 'Harshita',
+        description: 'The quality of the cards are amazing! The packaging is also very good. I ordered a birthday card and a photo frame and both of them were really good. I would definitely recommend this to everyone.',
+    },
+    {
+        id: 5,
+        name: 'Ishita Raina',
+        description: 'Absolutely loved the product and services offered. The journal turned out amazing. Not just the product but also the way it was packaged and shipped. Would definitely consider buying again.',
+    },
 ]
 
 const Testimonials = () => {
@@ -45,8 +55,8 @@ const Testimonials = () => {
   
     return (
       <div className="bg-[#f5efe3]">
-        <div className='mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
-          <h2 className="text-3xl font-semibold tracking-tight text-gray-900">More from our Collections</h2>
+        <div className='mx-auto max-w-2xl px-4 py-2 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
+          <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Testimonials</h2>
           <Slider {...settings} className="slick-custom mt-6">
             {cards.map((testimonial) => (
               <div key={testimonial.id} className="p-2 text-center grid grid-cols-4">
