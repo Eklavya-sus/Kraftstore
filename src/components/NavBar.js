@@ -14,9 +14,9 @@ export default function NavBar() {
   return (
     <div>
       {/* Header */}
-      <div className='text-center text-sm font-semibold text-[#f5efe3] bg-[#956f5a] uppercase tracking-wide py-2'>Welcome to our store!</div>
+      <div className='text-center text-sm font-light text-[#f5efe3] bg-[#956f5a] uppercase tracking-wide py-1'>Welcome to our store!</div>
       {/* Horizontal Rule (visible on medium and larger screens) */}
-      <hr className='border-1 border-[#C2A293] hidden md:block' />
+      <hr className='border-1 border-[#C2A293] block' />
 
       {/* Navbar */}
       <div className='bg-[#956f5a] w-full md:h-56 flex flex-col md:flex-row items-center justify-center font-montserrat text-base font-normal leading-normal relative sm:pb-10 h-[140px]'>

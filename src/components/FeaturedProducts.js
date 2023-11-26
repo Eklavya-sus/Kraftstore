@@ -49,7 +49,7 @@ const FeaturedProducts = () => {
     return (
         <div className="bg-[#f5efe3]">
             <div className="mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Featured Collection</h2>
+                <h2 className="text-gray-800 lg:text-3xl text-3xl font-medium tracking-wide">Featured Collection</h2>
 
                 <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
