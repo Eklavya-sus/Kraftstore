@@ -105,7 +105,7 @@ const MoreCollectionSection = () => {
     return (
         <div className="bg-[#f5efe3]">
             <div className='mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
-                <h2 className="text-3xl font-semibold tracking-tight text-gray-900">More from our Collections</h2>
+                <h2 className="text-gray-800 lg:text-3xl text-3xl font-medium tracking-wide">More from our Collections</h2>
                <Slider {...settings} className="slick-custom mt-6">
                     {products.map((product) => (
                         <div key={product.id} className="p-2">

@@ -9,7 +9,7 @@ const BestSeller = () => {
       <section>
         <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
           <header className="">
-          <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Our Best Sellers</h2>
+          <h2 className="text-gray-800 lg:text-3xl text-3xl font-medium tracking-wide">Our Best Sellers</h2>
           </header>
 
           <ul className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">
