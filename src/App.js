@@ -4,6 +4,7 @@ import FeaturedProducts from './components/FeaturedProducts';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import MoreCollection from './components/MoreCollection';
+import Testimonials from './components/Testimonials';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <FeaturedProducts/>
       <BestSeller/>
       <MoreCollection/>
+      <Testimonials/>
     </div>
   );
 }
