@@ -53,12 +53,12 @@ const FeaturedProducts = () => {
 
                 <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
-                        <div key={product.id} className="group relative border md:border-4px border-2px border-[#cccccc] rounded-sm shawdow-lg">
-                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-sm bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                        <div key={product.id} className="group relative border md:border-4px border-2px border-[#dad5cb] rounded-sm shawdow-lg">
+                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-sm bg-gray-200 lg:aspect-none lg:h-80">
                                 <img
                                     src={product.imageSrc}
                                     alt={product.imageAlt}
-                                    className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                                    className="h-full w-full object-cover object-center lg:h-full lg:w-full transition-transform duration-300 transform-gpu group-hover:scale-110"
                                 />
                             </div>
                             <div className="mt-4 md:p-2 p-1 flex justify-between">

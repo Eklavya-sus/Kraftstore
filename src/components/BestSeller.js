@@ -13,12 +13,12 @@ const BestSeller = () => {
           </header>
 
           <ul className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">
-            <li className="lg:col-span-2 lg:col-start-1 lg:row-span-2 lg:row-start-1 border md:border-4px border-2px border-[#cccccc] rounded-sm">
+            <li className="lg:col-span-2 lg:col-start-1 lg:row-span-2 lg:row-start-1 border md:border-4px border-2px border-[#dad5cb] rounded-sm">
               <a href="#" className="relative block group">
                 <img
                   src={product3}
                   alt=""
-                  className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
+                  className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-75"
                 />
                 <div className="text-center p-2 md:p-6">
                   <h2 className="font-medium text-xl text-gray-900 group-hover:underline group-hover:underline-offset-4">
@@ -27,12 +27,12 @@ const BestSeller = () => {
                 </div>
               </a>
             </li>
-            <li className="border md:border-4px border-2px border-[#cccccc] rounded-sm">
+            <li className="border md:border-4px border-2px border-[#dad5cb] rounded-sm">
               <a href="#" className="relative block group">
                 <img
                   src={product1}
                   alt=""
-                  className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
+                  className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-75 "
                 />
                 <div className="text-center p-2">
                   <h3 className="font-medium text-xl text-gray-900 group-hover:underline group-hover:underline-offset-4">
@@ -42,12 +42,12 @@ const BestSeller = () => {
               </a>
             </li>
 
-            <li className="border md:border-4px border-2px border-[#cccccc] rounded-sm">
+            <li className="border md:border-4px border-2px border-[#dad5cb] rounded-sm">
               <a href="#" className="relative block group">
                 <img
                   src={product2}
                   alt=""
-                  className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
+                  className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-75"
                 />
                 <div className="text-center p-2">
                   <h3 className="font-medium text-xl text-gray-900 group-hover:underline group-hover:underline-offset-4">
