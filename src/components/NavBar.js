@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
-// import searchIcon from './search.png';
-// import bagIcon from './bag.png';
+// import searchIcon from './assests/search.png';
+// import bagIcon from './assests/bag.png';
 import logo from '../components/assests/logo.jpg';
 
 export default function NavBar() {
@@ -17,7 +17,6 @@ export default function NavBar() {
       <div className='text-center text-xs lg:text-sm font-light text-[#f5efe3] bg-[#956f5a] uppercase tracking-wide py-1'>Welcome to our store!</div>
       {/* Horizontal Rule (visible on medium and larger screens) */}
       <hr className='border-1 border-[#C2A293] block' />
-
       {/* Navbar */}
       <div className='bg-[#956f5a] w-full md:h-56 flex flex-col md:flex-row items-center justify-center font-montserrat text-base font-normal leading-normal relative sm:pb-10 h-[140px]'>
       <img className="lg:w-48 rounded-full w-32" src={logo} alt="logo" />
@@ -28,11 +27,11 @@ export default function NavBar() {
             <p className='py-2 lg:py-0 px-4 lg:px-0 text-center lg:text-left text-lg  hover:underline hover:cursor-pointer'>About us</p>
             <p className='py-2 lg:py-0 px-4 lg:px-0 text-center lg:text-left text-lg  hover:underline hover:cursor-pointer'>Contact Us</p>
           </div>
-        {/* Section 3: Icons */}
-        {/* <div className='w-8 lg:w-6 flex md:justify-end gap-6 lg:pt-0 pt-6 justify-center'>
-          <Image src={searchIcon} alt="search" />
-          <Image src={bagIcon} alt="bag" />
-        </div> */}
+          {/* section 3 */}
+          {/* <div className='w-8 lg:w-6 flex md:justify-end gap-6 lg:pt-0 pt-6 justify-center mt-48 -mr-20'>
+          <img src={searchIcon} alt="search" />
+          <img src={bagIcon} alt="bag" /> */}
+        </div>
         {/* Mobile Menu Toggle */}
         <div className='lg:hidden absolute top-3 right-3 text-[#f5efe3]' onClick={toggleMenu}>
           <svg
@@ -52,6 +51,5 @@ export default function NavBar() {
           </svg>
         </div>
       </div>
-    </div>
   );
 }
