@@ -1,24 +1,49 @@
-import React from 'react';
-import art from './assests/art.jpg'
-import art2 from './assests/art2.jpg'
+import React, { useState, useEffect } from 'react';
+import product1 from './sampleProducts/product1.jpg';
+import product2 from './sampleProducts/product2.jpg';
+import product3 from './sampleProducts/product3.jpg';
+import product4 from './sampleProducts/product4.jpg';
+// import product5 from './sampleProducts/product5.jpg';
 
-export default function Home() {
+const images = [
+  product1,
+  product2,
+  product3,
+  product4,
+  // product5,
+];
+
+const Home = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) =>
+        prevImage === images.length - 1 ? 0 : prevImage + 1
+      );
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className='bg-image flex justify-center items-center'>
-      <div className="bg-[#f5efe3] md:w-1/2 h-auto w-full  lg:px-4 lg:py-8 md:rounded-lg">
-      <img className='md:hidden' src={art} alt="kraftstore" />
-        <div className="flex flex-col justify-center items-center m-4">
-          <h1 className="text-gray-800 lg:text-3xl text-3xl font-medium">Shop Our Aesthetics</h1>
-          <p className="my-4 md:text-sm text-xs text-center text-gray-600 leading-loose tracking-widest">
-          Discover affordable, personalized aesthetic gifts capturing life's moments—frames and hampers celebrating every occasion. At TheKraftCloset, gifting's an art, we're here to help you ace it. Explore our collection and experience the joy of gifting like never before. Revolutionizing gifting, our unique online platform is your go-to destination for aesthetic gifts! Enjoy shopping. 
-          </p>
-          <div className="flex gap-6">
-            <button className='rounded-lg bg-[#956f5a] text-[#f5efe3] md:text-lg text-sm py-2 px-4 font-semibold hover:cursor-pointer hover:bg-[#C2A293]'>Shop Now</button>
-            <button className='rounded-lg bg-[#956f5a] text-[#f5efe3] md:text-lg text-sm py-2 px-4 font-semibold hover:cursor-pointer hover:bg-[#C2A293]'>Contact Us</button>
-          </div>
+    <div className="relative h-[200px] md:h-screen w-full bg-gray-300">
+      <div className="md:h-screen h-[200px] relative overflow-hidden">
+        <div className="h-full">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                currentImage === index ? 'opacity-100' : 'opacity-0'
+              }`}
+            />
+          ))}
         </div>
-        <img className='md:hidden' src={art2} alt="kraftstore" />
       </div>
     </div>
   );
-}
+};
+
+export default Home;
