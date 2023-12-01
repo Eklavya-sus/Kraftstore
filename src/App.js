@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import MoreCollection from './components/MoreCollection';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <MoreCollection/>
       <Testimonials/>
       <About/>
+      <Footer/>
     </div>
   );
 }

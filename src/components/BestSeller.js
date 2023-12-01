@@ -27,6 +27,7 @@ const BestSeller = () => {
                 </div>
               </a>
             </li>
+            <div className="flex md:flex-col flex-row gap-4">
             <li className="border md:border-4px border-2px border-[#dad5cb] rounded-sm">
               <a href="#" className="relative block group">
                 <img
@@ -35,7 +36,7 @@ const BestSeller = () => {
                   className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-75 "
                 />
                 <div className="text-center p-2">
-                  <h3 className="font-medium text-xl text-gray-900 group-hover:underline group-hover:underline-offset-4">
+                  <h3 className="font-medium md:text-xl text-lg text-gray-900 group-hover:underline group-hover:underline-offset-4">
                     Birthday Cards &rarr;
                   </h3>
                 </div>
@@ -50,12 +51,13 @@ const BestSeller = () => {
                   className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-75"
                 />
                 <div className="text-center p-2">
-                  <h3 className="font-medium text-xl text-gray-900 group-hover:underline group-hover:underline-offset-4">
+                  <h3 className="font-medium md:text-xl text-lg text-gray-900 group-hover:underline group-hover:underline-offset-4">
                     Aniversary Cards &rarr;
                   </h3>
                 </div>
               </a>
             </li>
+            </div>
           </ul>
         </div>
       </section>
