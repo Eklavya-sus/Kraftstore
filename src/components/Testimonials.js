@@ -55,8 +55,8 @@ const Testimonials = () => {
   
     return (
       <div className="bg-[#f5efe3]">
-        <div className='mx-auto max-w-2xl px-4 py-2 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
-          <h2 className="text-gray-800 lg:text-3xl text-3xl font-medium tracking-wide">Testimonials</h2>
+        <div className='mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
+          <h2 className="text-gray-800 lg:text-3xl text-3xl font-medium tracking-wide">What People Have Said</h2>
           <Slider {...settings} className="slick-custom mt-6">
             {cards.map((testimonial) => (
               <div key={testimonial.id} className="p-2 text-center grid grid-cols-4">
