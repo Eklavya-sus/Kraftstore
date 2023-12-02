@@ -10,19 +10,6 @@ body{
     font-family: 'CustomFont';
     letter-spacing: 0.8px;
 }
-  
-@media screen and (min-width: 640px) {
-    .bg-image{
-        background-image: url('./components/assests/home.jpg');
-        background-size: cover;
-        background-position: 20% 40%;
-        background-repeat: no-repeat;
-        height: 65vh;
-        width: 100%;
-        position: relative;
-        z-index: -1;
-    }
-}
 
 /* navbar css */
 .container {
@@ -36,38 +23,31 @@ body{
   }
   
   .navbar {
-    height: 60px;
-    background-color: #fef7e5;
+    height: auto;
+    background-color: #956f5a;
     position: relative;
   }
   
   .logo {
+    max-width: 140px;
+    margin-left: -60px;
   }
   
   .menu-icon {
     display: none;
   }
-  
-  .nav-elements {
-  }
+
   
   .nav-elements ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    color: #f5efe3;
   }
   
   .nav-elements ul li:not(:last-child) {
     margin-right: 60px;
   }
-  
-  .nav-elements ul a {
-    font-size: 16px;
-    font-weight: 400;
-    color: #2f234f;
-    text-decoration: none;
-  }
-  
   .nav-elements ul a.active {
     color: #574c4c;
     font-weight: 500;
@@ -83,10 +63,16 @@ body{
     height: 2px;
     background-color: #574c4c;
   }
-  
-  @media (max-width: 768px) {
+
+  @media (max-width: 1024px) {
     .nav-elements ul li:not(:last-child) {
       margin-right: 30px;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .container{
+        justify-content: space-evenly;
     }
   }
   
@@ -94,17 +80,23 @@ body{
     .menu-icon {
       display: block;
       cursor: pointer;
+      color: #f5efe3;
+      margin-left: -30px;
     }
+    .logo {
+        max-width: 80px;
+      }
   
     .nav-elements {
       position: absolute;
-      right: 0;
-      top: 60px;
-      background-color: #fef7e5;
+      left: 0px;
+      top: 100px;
+      background-color: #956f5a;
       width: 0px;
-      height: calc(100vh - 60px);
-      transition: all 0.3s ease-in;
+      height: calc(100vh - 100px);
+      transition: all 0.2s ease-in;
       overflow: hidden;
+      z-index: 1;
     }
   
     .nav-elements.active {
@@ -114,6 +106,7 @@ body{
     .nav-elements ul {
       display: flex;
       flex-direction: column;
+      padding-left: 50px;
     }
   
     .nav-elements ul li {
